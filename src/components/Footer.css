@@ -1,0 +1,141 @@
+.footer-container {
+  padding: 5rem 10rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  font-size: 1.8rem !important;
+  color: #525962;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  /* gap: 5rem; */
+}
+
+.footer-bottom-left {
+  flex: 1;
+}
+
+.footer-bottom-left span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link-flex {
+  flex: 0.3;
+}
+
+hr {
+  border: 1px solid #c9d5e7;
+}
+
+@media screen and (max-width: 1350px) {
+  .footer-container {
+    padding: 5rem 4rem;
+  }
+
+  .link-flex {
+    flex: 0.5;
+  }
+
+  .top-links {
+    flex: 0.5;
+  }
+
+  .social {
+    flex: 0.2;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .link-flex {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .top-links {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-container {
+    padding: 5rem 2rem;
+  }
+
+  .footer-nav {
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+  }
+
+  .footer-bottom-left {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom-left span {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom-right {
+    gap: 1rem;
+  }
+
+  .link-flex {
+    flex-direction: row;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-left: 0;
+  }
+}
